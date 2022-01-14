@@ -4,7 +4,7 @@ import scipy.io.wavfile as waves
 import csv
 import pandas as pd
 
-file = 'TimBrain_VisualCortex_BYB_Recording.wav'
+file = 'Mia_BYB_Recording_2021-09-30_12.40.39.wav'
 fs, data = waves.read(file)
 
 length_data=np.shape(data)
@@ -78,7 +78,7 @@ df.to_csv("datosyt.csv", index=False)
 
 
 
-tg=np.array([4.2552,14.9426, 23.2801,36.0951, 45.4738,59.3751, 72.0337,85.0831, max(t)+1])
+tg=np.array([3,10, 32,48, 90,103, 130,140, max(t)+1])
 
 length_t=np.shape(t)
 l_row_t=length_t[0]
